@@ -1,0 +1,19 @@
+# maven build
+target/
+
+# eclipse
+.classpath
+.project
+.settings/
+
+# idea intellij
+bin/
+.idea/
+*.iml
+
+# macintosh
+.DS_Store
+
+
+
+
