@@ -9,12 +9,13 @@ public class Launcher {
 
 	public static void main(String[] args) throws Exception {
 
-		final ResourceConfig app = new ResourceConfig().register(DemoResources.class);
+		final ResourceConfig app = new ResourceConfig().register(DemoResources.class)
+				.register(RequirePrincipalFilter.class);
 
 		GrizzlyHttpServerFactory.createHttpServer(URI.create("http://localhost:8081/"), app, true);
 
-		//		Thread.currentThread().join();
-		
+		// Thread.currentThread().join();
+
 	}
 
 }
